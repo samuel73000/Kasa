@@ -1,0 +1,24 @@
+.haeder-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+
+
+.header-accueil{
+color: #ff6060;
+position: relative;
+top: 17px;
+font-size: 24px;
+
+}
+
+
+.haeder-propos{
+    color: #ff6060;
+    margin-left: 57px;
+    position: relative;
+    top: 17px;
+    font-size: 24px;
+}
