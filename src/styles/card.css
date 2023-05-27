@@ -2,34 +2,33 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;;
+    background-color: #e5e5e5;
     border-radius: 25px;
     margin-top: 43px;
     position: absolute;
     padding: 50px 50px 0px 50px;
-   width: 84%;
-   height: 313%;
-   align-items: center;
-   
-   
+    width: 84%;
+    height: 290%;
+    align-items: center;
 }
 
 .card-img{
-    
+    background-color: #ff6060;
     border-radius: 10px;
     width: 28%;
-    height: 340px;
+    height: 12.5%;
     padding: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    
 }
 
 .card-text{
   line-height: 142.6%;
-    font-size: 18px;
- color: #FFFFFFFF;
-   width: 20%;
-   height: 0px;
+  font-size: 18px;
+  color: #ffffff;
+  width: 20%;
+  height: 0px;
   margin-top: -5%;
-margin-left: -6%;
-margin-bottom: 8%;
+  margin-left: -6%;
+  margin-bottom: 8%;
 }
+

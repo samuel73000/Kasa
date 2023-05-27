@@ -6,6 +6,8 @@
     align-items: center;
     justify-content: center;
     margin-left: 90px;
+    
+    
 }
 
 .banner-img{
@@ -14,7 +16,7 @@
     height: 223px;
     border-radius: 25px;
     z-index: 1;
-   
+    filter: brightness(60%);
 }
 
 .banner-titre{
