@@ -1,9 +1,10 @@
 import "../styles/Banner.css"
-function Banner(){
+function Banner(props){
+   
     return(
     <div className="banner-container">
-        <img src={require("../assets/ImgBanner.png")}className="banner-img" />
-        <h1 className="banner-titre">Chez vous, partout et ailleurs</h1>
+        <img src={props.image} className="banner-img" alt="bannier"/>
+        <h1 className={props.classNameTitre}>Chez vous, partout et ailleurs</h1>
     </div>
     
     )

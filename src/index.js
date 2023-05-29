@@ -5,7 +5,6 @@ import Home from "./pages/home/index"
 import Logement from "./pages/logement/index"
 import Error from "./pages/error/index"
 import Propos from "./pages/propos/index"
-import Header from "./components/Header"
 import "./styles/index.css"
 
 ReactDOM.render(
