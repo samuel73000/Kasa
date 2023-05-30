@@ -4,27 +4,93 @@ import React,{ useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-function Collapse(){
-    let [isOpen , setOpen] = useState(false);
 
-    return isOpen ? (
-        <section >
-            <button onClick={() => setOpen(false)} className='collapse-btn'>
-            Fiabilité
-            <img src={require("../assets/flechehaut.png")} />
+const Collapse = () => {
+    const [isOpen, setIsOpen] = useState([]);
+  
+    const toggleCollapse = (index) => {
+      const newIsOpen = [...isOpen];
+      newIsOpen[index] = !newIsOpen[index];
+      setIsOpen(newIsOpen);
+    };
+  
+    return (
+      <section>
+        <div>
+          {isOpen[0] ? (
+            <div>
+              <button onClick={() => toggleCollapse(0)} className="collapse-btn">
+                Fiabilité
+                <img src={require('../assets/flechehaut.png')} alt="Flèche vers le haut" className="collapse-fleche" />
+              </button>
+              <p className="collapse-texte">
+                Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
+                et toutes les informations sont régulièrement vérifiées par nos équipes.
+              </p>
+            </div>
+          ) : (
+            <button onClick={() => toggleCollapse(0)} className="collapse-btn">
+              Fiabilité
+              <img src={require('../assets/flechebas.png')} alt="Flèche vers le bas" className="collapse-fleche" />
             </button>
-          <p className="collapse-texte">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>
-        </section>
+          )}
+        </div>
+  
+        <div>
+          {isOpen[1] ? (
+            <div>
+              <button onClick={() => toggleCollapse(1)} className="collapse-btn">
+              Respect
+                <img src={require('../assets/flechehaut.png')} alt="Flèche vers le haut" className="collapse-fleche" />
+              </button>
+              <p className="collapse-texte">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+            </div>
+          ) : (
+            <button onClick={() => toggleCollapse(1)} className="collapse-btn">
+              Respect
+              <img src={require('../assets/flechebas.png')} alt="Flèche vers le bas" className="collapse-fleche" />
+            </button>
+          )}
+        </div>
+
+        <div>
+          {isOpen[2] ? (
+            <div>
+              <button onClick={() => toggleCollapse(2)} className="collapse-btn">
+              Service
+                <img src={require('../assets/flechehaut.png')} alt="Flèche vers le haut" className="collapse-fleche" />
+              </button>
+              <p className="collapse-texte">Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
+            </div>
+          ) : (
+            <button onClick={() => toggleCollapse(2)} className="collapse-btn">
+              Service
+              <img src={require('../assets/flechebas.png')} alt="Flèche vers le bas" className="collapse-fleche" />
+            </button>
+          )}
+        </div>
+  
+        <div>
+          {isOpen[3] ? (
+            <div>
+              <button onClick={() => toggleCollapse(3)} className="collapse-btn">
+              Sécurité
+                <img src={require('../assets/flechehaut.png')} alt="Flèche vers le haut" className="collapse-fleche" />
+              </button>
+              <p className="collapse-texte">La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
+            </div>
+          ) : (
+            <button onClick={() => toggleCollapse(3)} className="collapse-btn">
+              Sécurité
+              <img src={require('../assets/flechebas.png')} alt="Flèche vers le bas" className="collapse-fleche" />
+            </button>
+          )}
+        </div>
         
 
-    ) :(
-        <section>
-            <button onClick={() => setOpen(true)} className='collapse-btn'>
-            Fiabilité
-            <img src={require("../assets/flechebas.png")} />
-            </button>
-            
-        </section>
-    )
-}
-export default Collapse
+
+      </section>
+    );
+  };
+  
+  export default Collapse;

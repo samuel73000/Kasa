@@ -1,3 +1,4 @@
+
 .collapse-btn{
     display: flex;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     font-size: 24px;
     align-items: center;
     border-radius: 5px;
-    margin-top: 33px;
+    margin-top: 40px;
     color: white;
     border: #FF6060;
 }
@@ -22,4 +23,11 @@
     border-radius: 5px;
     padding: 36px 0px 19px 19px;
     margin-top: -1px;
+}
+
+
+
+.collapse-fleche{
+    width: 24px;
+    margin-right: 2%;
 }

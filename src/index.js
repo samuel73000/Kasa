@@ -5,9 +5,11 @@ import "./styles/index.css"
 import router from './router';
 
 
+
 ReactDOM.render(
   <React.StrictMode>
    <RouterProvider router={router} />
+   
    
   </React.StrictMode>,
   document.getElementById('root')

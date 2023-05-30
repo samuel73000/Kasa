@@ -1,12 +1,15 @@
 body{
-    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
     margin-left: 100px;
     margin-right: 100px;
-   
-    
+    height: 100%;
 }
 
 img{
     object-fit: cover;
+}
+
+p,h1,h2,button,h3{
+    font-family: 'Montserrat', sans-serif;
 }

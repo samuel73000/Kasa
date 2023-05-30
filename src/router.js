@@ -1,27 +1,33 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "./pages/home/index";
-import Propos from "./pages/propos/index";
-import Logement from "./pages/logement/index";
-import Error from "./pages/Error/index";
+import Home from "./pages/Home";
+import Propos from "./pages/Propos";
+import Logement from "./pages/Logement";
+import Error from "./pages/Error";
+import App from "./App";
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
-
+      element: <App />,
+      children: [ 
+        {
+          path: "",
+          element: <Home />
+        },
+        {
+        path: "/Logement",
+        element: <Logement />,
+      },
+      {
+       path:'/Error',
+       element:<Error />
+  
+      },
+      {
+      path:'/Propos',
+      element:<Propos />
+      },]
     },
-    {
-      path: "Logement",
-      element: <Logement />,
-    },
-    {
-     path:'/Error',
-     element:<Error />
-
-    },
-    {
-    path:'/Propos',
-    element:<Propos />
-    },
+   
   ]);
    
   export default router
