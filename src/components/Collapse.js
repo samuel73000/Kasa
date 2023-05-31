@@ -1,5 +1,5 @@
 
-import "../styles/Collapse.css"
+import "../styles/index.css"
 import React,{ useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

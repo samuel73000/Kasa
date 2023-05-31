@@ -1,4 +1,4 @@
-import "../styles/card.css"
+import "../styles/index.css"
 function Card(){
         const {data} = require('../data/AppartementList');
         
