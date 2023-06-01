@@ -4,6 +4,7 @@ import Propos from "./pages/Propos";
 import Logement from "./pages/Logement";
 import Error from "./pages/Error";
 import App from "./App";
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -25,7 +26,13 @@ const router = createBrowserRouter([
       {
       path:'/Propos',
       element:<Propos />
-      },]
+      },
+      {
+      path:'/*',
+      element:<Error />
+      }
+    
+    ]
     },
    
   ]);

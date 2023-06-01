@@ -127,7 +127,25 @@ body {
 
 .collapse-fleche-ani .collapse-fleche {
   transform: rotate(180deg);
-  transition: rotate 5s;
+}
+.error-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.error-container .error-titre {
+  font-size: 263px;
+  color: #ff6060;
+}
+.error-container .error-texte {
+  font-size: 36px;
+  color: #ff6060;
+  margin-top: -50px;
+}
+.error-container .error-link {
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: 200px;
 }
 
 .footer-container {

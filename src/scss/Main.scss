@@ -151,19 +151,40 @@ font-size: $font-size-p;
 }
 .collapse-fleche{
     margin-right: 20px;
-    
 }
 
 .collapse-fleche-ani{
     .collapse-fleche{
         transform: rotate(180deg);
-        transition: rotate 5s;
-        
-        
     }
-   
+   .collapse-texte{
+
+   }
 }
 
+// page Error
+.error-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+.error-titre{
+    font-size: 263px;
+    color: $color-red;
+}
+
+.error-texte{
+    font-size: 36px;
+    color: $color-red;
+    margin-top: -50px;
+}
+.error-link{
+    color: $color-red;
+    font-size: 18px;
+    margin-top: 200px;
+}
+
+}
 
 // Footer
 
