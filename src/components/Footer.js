@@ -1,10 +1,10 @@
 import"../styles/index.css"
 function Footer(){
     return(
-        <div className="footer-container">
+        <footer className="footer-container">
             <img src={require("../assets/LOGOnoiretblanc.png")} className="footer-img" alt="logo" />
             <p className="footer-text">2020 Kasa. All rights reserved </p>
-        </div>
+        </footer>
     )
 }
 export  default Footer
