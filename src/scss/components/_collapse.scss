@@ -1,0 +1,74 @@
+@import "../utils/variable";
+@import "../utils/mixin";
+
+
+// collapse a propos
+
+.collapse-btn{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-red;
+    width: 90%;
+    height:47px ;
+    margin-left: 100px;
+    font-size: $font-size-p;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 40px;
+    color:  $color-white;
+    border: $color-red;
+}
+
+
+
+.collapse-texte{
+    background-color: #f7f7f7;
+    color: $color-red;
+    margin-left: 98px;
+    width: 89%;
+    font-size: $font-size-p;
+    border-radius: 5px;
+    padding: 36px 0px 19px 19px;
+    margin-top: -1px;
+}
+
+
+
+
+ .collapse-btn{
+.collapse-fleche-open{
+  animation: flecheAnimation 1s forwards ease;  }
+ }
+ .collapse-btn{
+.collapse-fleche-close{
+  animation: flecheAnimation 1s reverse forwards ease;}  
+ }
+
+.collapse-fleche-open{
+  margin-right: 20px;
+}
+.collapse-fleche-close{
+  
+  margin-right: 20px;
+}
+ 
+
+
+
+
+
+
+
+@keyframes flecheAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+

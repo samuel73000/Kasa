@@ -1,0 +1,31 @@
+@import "../utils/variable";
+@import "../utils/mixin";
+
+
+// banner
+
+.banner-container{
+    width: 90%;
+    height: 223px;
+    margin-top: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 90px;
+    
+.banner-img{
+    position:absolute;
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    z-index: 1;
+    filter: brightness(60%);
+}
+
+.banner-titre{
+    position: relative;
+    font-size: 48px;
+    z-index: 2;
+    color: $color-white;
+}
+}

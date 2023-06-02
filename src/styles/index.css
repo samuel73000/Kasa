@@ -1,43 +1,21 @@
-body {
-  margin: 0 100px 0 100px;
-  object-fit: cover;
-  font-family: "Montserrat", sans-serif;
-}
-
-.App {
-  min-height: 100vh;
+.error-container {
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
-
-.haeder-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-.haeder-container .header-accueil {
+.error-container .error-titre {
+  font-size: 263px;
   color: #ff6060;
-  position: relative;
-  top: 17px;
-  font-size: 24px;
 }
-.haeder-container .header-propos {
+.error-container .error-texte {
+  font-size: 36px;
   color: #ff6060;
-  margin-left: 57px;
-  position: relative;
-  top: 17px;
-  font-size: 24px;
+  margin-top: -50px;
 }
-.haeder-container .header-selected {
+.error-container .error-link {
   color: #ff6060;
-  margin-left: 57px;
-  position: relative;
-  top: 17px;
-  font-size: 24px;
-  text-decoration: none;
-}
-.haeder-container .active {
-  text-decoration: none;
+  font-size: 18px;
+  margin-top: 200px;
 }
 
 .banner-container {
@@ -121,33 +99,30 @@ body {
   margin-top: -1px;
 }
 
-.collapse-fleche {
+.collapse-btn .collapse-fleche-open {
+  animation: flecheAnimation 1s forwards ease;
+}
+
+.collapse-btn .collapse-fleche-close {
+  animation: flecheAnimation 1s reverse forwards ease;
+}
+
+.collapse-fleche-open {
   margin-right: 20px;
 }
 
-.collapse-fleche-ani .collapse-fleche {
-  transform: rotate(180deg);
-}
-.error-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.error-container .error-titre {
-  font-size: 263px;
-  color: #ff6060;
-}
-.error-container .error-texte {
-  font-size: 36px;
-  color: #ff6060;
-  margin-top: -50px;
-}
-.error-container .error-link {
-  color: #ff6060;
-  font-size: 18px;
-  margin-top: 200px;
+.collapse-fleche-close {
+  margin-right: 20px;
 }
 
+@keyframes flecheAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
 .footer-container {
   position: relative;
   bottom: -50px;
@@ -167,6 +142,48 @@ body {
   color: white;
   margin-left: 41%;
   font-size: 24px;
+}
+
+.haeder-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.haeder-container .header-accueil {
+  color: #ff6060;
+  position: relative;
+  top: 17px;
+  font-size: 24px;
+}
+.haeder-container .header-propos {
+  color: #ff6060;
+  margin-left: 57px;
+  position: relative;
+  top: 17px;
+  font-size: 24px;
+}
+.haeder-container .header-selected {
+  color: #ff6060;
+  margin-left: 57px;
+  position: relative;
+  top: 17px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.haeder-container .active {
+  text-decoration: none;
+}
+
+body {
+  margin: 0 100px 0 100px;
+  object-fit: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=index.css.map */

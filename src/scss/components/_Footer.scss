@@ -1,0 +1,30 @@
+@import "../utils/variable";
+@import "../utils/mixin";
+
+
+// Footer
+
+.footer-container{
+    position: relative;
+    bottom: -50px;
+    margin-top: auto;
+    background-color: #000000;
+    width: 111.7%;
+    height:200px ;
+    margin-left: -100PX;
+   
+    
+    
+    .footer-img{
+    width: 120px;
+    margin-left: 47%;
+    margin-top: 66px;
+    margin-bottom: 15px;
+    }
+    
+    .footer-text{
+    color: $color-white;
+    margin-left: 41%;
+    font-size: $font-size-p;
+    }
+}

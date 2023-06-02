@@ -1,0 +1,26 @@
+@import "../utils/variable";
+@import "../utils/mixin";
+
+// page Error
+.error-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+.error-titre{
+    font-size: 263px;
+    color: $color-red;
+}
+
+.error-texte{
+    font-size: 36px;
+    color: $color-red;
+    margin-top: -50px;
+}
+.error-link{
+    color: $color-red;
+    font-size: 18px;
+    margin-top: 200px;
+}
+
+}
