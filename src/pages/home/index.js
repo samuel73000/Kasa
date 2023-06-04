@@ -1,6 +1,8 @@
 import Banner from "../../components/Banner"
 import Card from "../../components/Card"
 
+
+
 function Home(){
     let imageHeader = require('../../assets/ImgBanner.png');
     let bannerTitre = "banner-titre";

@@ -50,16 +50,16 @@
   border-radius: 25px;
   margin-top: 43px;
   padding: 50px 50px 0px 50px;
-  width: 95%;
-  height: 2720px;
+  width: 94%;
+  height: 2500px;
   align-items: center;
   column-gap: 30px;
 }
 .Card-container .card-img {
   background-color: #ff6060;
   border-radius: 10px;
-  width: 32%;
-  height: 340px;
+  width: 100%;
+  height: 100%;
   padding: 0;
 }
 .Card-container .card-text {
@@ -69,8 +69,13 @@
   width: 20%;
   height: 0px;
   margin-top: -5%;
-  margin-left: -6%;
+  margin-left: -4%;
   margin-bottom: 8%;
+  outline: 0px solid #ac050b;
+}
+.Card-container a {
+  width: 25%;
+  height: 12%;
 }
 
 .collapse-btn {
@@ -100,26 +105,22 @@
 }
 
 .collapse-btn .collapse-fleche-open {
-  animation: flecheAnimation 1s forwards ease;
+  animation: flecheAnimation 0.5s reverse forwards;
 }
 
 .collapse-btn .collapse-fleche-close {
-  animation: flecheAnimation 1s reverse forwards ease;
+  animation: flecheAnimation 0.5s forwards;
 }
 
-.collapse-fleche-open {
-  margin-right: 20px;
-}
-
-.collapse-fleche-close {
+#collapse-fleche {
   margin-right: 20px;
 }
 
 @keyframes flecheAnimation {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(180deg);
   }
 }

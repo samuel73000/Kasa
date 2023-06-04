@@ -2,6 +2,8 @@
 @import "../utils/mixin";
 
 
+
+
 // collapse a propos
 
 .collapse-btn{
@@ -30,43 +32,48 @@
     border-radius: 5px;
     padding: 36px 0px 19px 19px;
     margin-top: -1px;
+    
+}
+
+
+ .collapse-btn{
+  .collapse-fleche-open{
+    animation: flecheAnimation 0.5s reverse forwards;
+    }
+ 
+
+}
+
+.collapse-btn{
+   .collapse-fleche-close{
+    animation: flecheAnimation 0.5s  forwards;
+     
+      }
+  
+
 }
 
 
 
-
- .collapse-btn{
-.collapse-fleche-open{
-  animation: flecheAnimation 1s forwards ease;  }
- }
- .collapse-btn{
-.collapse-fleche-close{
-  animation: flecheAnimation 1s reverse forwards ease;}  
- }
-
-.collapse-fleche-open{
-  margin-right: 20px;
-}
-.collapse-fleche-close{
+#collapse-fleche{
   
   margin-right: 20px;
 }
- 
-
-
 
 
 
 
 
 @keyframes flecheAnimation {
-  0% {
-    transform: rotate(0deg);
+  from {
+    
+    transform: rotate(0deg)  ;
   }
-  100% {
-    transform: rotate(180deg);
+  to{
+    transform: rotate(180deg) ;
   }
 }
+
 
 
 

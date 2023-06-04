@@ -12,18 +12,18 @@
     border-radius: 25px;
     margin-top: 43px;
     padding: 50px 50px 0px 50px;
-    width: 95%;
-    height: 2720px;
+    width: 94%;
+    height: 2500px;
     align-items: center;
    column-gap: 30px;
     
 
 
 .card-img{
-    background-color: $color-red;
+  background-color: $color-red;
     border-radius: 10px;
-    width: 32%;
-    height: 340px;
+    width: 100%;
+    height: 100%;
     padding: 0;
     
     
@@ -36,7 +36,14 @@
   width: 20%;
   height: 0px;
   margin-top: -5%;
-  margin-left: -6%;
+  margin-left: -4%;
   margin-bottom: 8%;
+  outline: 0px solid #ac050b
 }
+a{
+  width: 25%;
+  height: 12%;
+  
+}
+
 }
