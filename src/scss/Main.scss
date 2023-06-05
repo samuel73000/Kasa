@@ -12,6 +12,7 @@ body{
     margin: 0 100px 0 100px;
     object-fit: cover;
     font-family: 'Montserrat', sans-serif;
+    
 
 }
 .App{
@@ -21,4 +22,6 @@ body{
 }
 
 
-
+img{
+    box-sizing: border-box;
+}

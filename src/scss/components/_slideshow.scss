@@ -1,3 +1,28 @@
 @import "../utils/variable";
 @import "../utils/mixin";
 
+
+.slideshow-container{
+    width: 1000px;
+    height: 100px;
+    
+
+
+
+
+.slideshow-img{
+width: 1000px;
+height: 10px;
+}
+
+.slideshow-fleche-gauche{
+position: relative;
+top: 50%;
+}
+
+
+.slideshow-fleche-droite{
+    position: relative;
+    top: 50%;
+}
+}

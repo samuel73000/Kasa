@@ -187,4 +187,8 @@ body {
   flex-direction: column;
 }
 
+img {
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=index.css.map */

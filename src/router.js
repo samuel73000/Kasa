@@ -6,35 +6,29 @@ import Error from "./pages/Error";
 import App from "./App";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <App />,
-      children: [ 
-        {
-          path: "",
-          element: <Home />
-        },
-        {
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
         path: "/Logement/:id",
         element: <Logement />,
       },
       {
-       path:'/Error',
-       element:<Error />
-  
+        path:"error",
+        element: <Error />
       },
       {
-      path:'/Propos',
-      element:<Propos />
+        path: "/Propos",
+        element: <Propos />,
       },
-      {
-      path:'/*',
-      element:<Error />
-      }
-    
-    ]
-    },
-   
-  ]);
-   
-  export default router
+    ],
+  },
+]);
+
+export default router;

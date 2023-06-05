@@ -1,5 +1,8 @@
-import "../styles/index.css";
+import "../styles/index.css"
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight , faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+
 
 
 class Slideshow extends React.Component {
@@ -33,10 +36,11 @@ class Slideshow extends React.Component {
       const { images } = this.props;
   
       return (
-        <div className="slideshow">
-          <button onClick={this.goToPrevSlide}>Précédent</button>
-          <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} />
-          <button onClick={this.goToNextSlide}>Suivant</button>
+        <div className="slideshow-container">
+          <button onClick={this.goToPrevSlide} className="slideshow-fleche-gauche"><FontAwesomeIcon icon={faChevronLeft} /></button>
+          <img src={images[currentIndex]} alt={`Slide ${currentIndex}`} className="slideshow-img" />
+          <button onClick={this.goToNextSlide} className="slideshow-fleche-droite"><FontAwesomeIcon icon={ faChevronRight } /></button>
+          
         </div>
       );
     }
