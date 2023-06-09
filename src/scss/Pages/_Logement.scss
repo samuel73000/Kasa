@@ -1,0 +1,60 @@
+@import "../utils/variable";
+@import "../utils/mixin";
+
+.logement-titre {
+  color: $color-red;
+  font-size: 36px;
+  margin-top: -60px;
+}
+
+.logement-location {
+  font-size: 18px;
+  color: $color-red;
+}
+
+.logement-container-profil {
+  margin-left: 91%;
+  margin-top: -100px;
+  display: flex;
+  gap: 20px;
+}
+.logement-name {
+  color: $color-red;
+  font-size: 18px;
+}
+.logement-host-picture {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.logement-container-tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.logement-tags {
+  color: $color-white;
+  font-size: 14px;
+  background-color: $color-red;
+  border-radius: 10px;
+  padding: 5px 35px 5px 35px;
+}
+
+.logement-container-etoile{
+  display: flex;
+  gap: 5px;
+  justify-content: end;
+  margin-top: -50px;
+}
+
+.logement-etoile-rouge{
+  font-size: 20px;
+  color: $color-red;
+}
+.logement-etoile-grise{
+  font-size: 20px;
+  color: #ffff;
+}
+

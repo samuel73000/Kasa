@@ -6,12 +6,14 @@
 @import "./components/collapse.scss";
 @import "./components/Footer.scss";
 @import "./components/Header.scss";
+@import "./components/slideshow";
+@import "./Pages/Logement";
 // *
 
 body{
     margin: 0 100px 0 100px;
-    object-fit: cover;
     font-family: 'Montserrat', sans-serif;
+    
     
 
 }
@@ -24,4 +26,8 @@ body{
 
 img{
     box-sizing: border-box;
-}
+    object-fit: cover;
+  }
+
+
+
