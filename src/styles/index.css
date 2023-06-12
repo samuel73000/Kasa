@@ -78,11 +78,14 @@
   height: 12%;
 }
 
+.collapse-container {
+  width: 90%;
+}
+
 .collapse-btn {
   display: flex;
   justify-content: space-between;
   background-color: #ff6060;
-  width: 90%;
   height: 47px;
   margin-left: 100px;
   font-size: 24px;
@@ -91,17 +94,18 @@
   margin-top: 40px;
   color: white;
   border: #ff6060;
+  width: 100%;
 }
 
 .collapse-texte {
   background-color: #f7f7f7;
   color: #ff6060;
   margin-left: 98px;
-  width: 89%;
   font-size: 24px;
   border-radius: 5px;
-  padding: 36px 0px 19px 19px;
   margin-top: -1px;
+  width: 100%;
+  padding: 20px 0 20px 0;
 }
 
 .collapse-btn .collapse-fleche-open {
@@ -254,6 +258,45 @@
 .logement-etoile-grise {
   font-size: 20px;
   color: white;
+}
+
+.logement-collapse-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  gap: 13%;
+  margin-top: 1%;
+}
+
+.logement-btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff6060;
+  height: 47px;
+  font-size: 24px;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  color: white;
+  border: #ff6060;
+  width: 39VW;
+}
+
+.logement-btn-none {
+  display: none;
+  width: 0px;
+  height: 0;
+}
+
+.logement-texte {
+  background-color: #f7f7f7;
+  color: #ff6060;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-top: -1px;
+  width: 39VW;
+  padding: 20px 0 20px 0;
 }
 
 body {

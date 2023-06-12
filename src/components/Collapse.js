@@ -9,7 +9,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Collapse() {
+function Collapse(props) {
   const [isOpen, setIsOpen] = useState([]);
 
   const toggleCollapse = (index) => {
@@ -23,20 +23,19 @@ function Collapse() {
   
 
   return (
-    <section>
+    <section className={props.containercollapse}>
     <div>
         {isOpen[0] ? (
           <div>
-            <button onClick={() => {toggleCollapse(0);}} className="collapse-btn">
-            Fiabilité
+            <button onClick={() => {toggleCollapse(0);}} className={props.classbtn1}>
+            {props.titre1}
               <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
-            <p className="collapse-texte ">Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
-                et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+            <p className={props.classtext}>{props.texte1}</p>
           </div>
         ) : (
-          <button onClick={() => { toggleCollapse(0)}} className="collapse-btn" >
-            Fiabilité
+          <button onClick={() => { toggleCollapse(0)}} className={props.classbtn1} >
+            {props.titre1}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
           </button>
         )}
@@ -45,15 +44,15 @@ function Collapse() {
       <div>
         {isOpen[1] ? (
           <div>
-            <button onClick={() => toggleCollapse(1)} className="collapse-btn">
-              Respect
+            <button onClick={() => toggleCollapse(1)} className={props.classbtn2}>
+            {props.titre2}
               <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
-            <p className="collapse-texte">La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+            <p className={props.classtext}>{props.texte2}</p>
           </div>
         ) : (
-          <button onClick={() => toggleCollapse(1)} className="collapse-btn">
-            Respect
+          <button onClick={() => toggleCollapse(1)} className={props.classbtn2}>
+            {props.titre2}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
           </button>
         )}
@@ -62,15 +61,15 @@ function Collapse() {
       <div>
         {isOpen[2] ? (
           <div>
-            <button onClick={() => toggleCollapse(2)} className="collapse-btn">
-              Service
+            <button onClick={() => toggleCollapse(2)} className={props.classbtn3}>
+            {props.titre3}
               <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
-            <p className="collapse-texte">Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
+            <p className={props.classtext}>{props.texte3}</p>
           </div>
         ) : (
-          <button onClick={() => toggleCollapse(2)} className="collapse-btn">
-            Service
+          <button onClick={() => toggleCollapse(2)} className={props.classbtn3}>
+            {props.titre3}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
           </button>
         )}
@@ -79,15 +78,15 @@ function Collapse() {
       <div>
         {isOpen[3] ? (
           <div>
-            <button onClick={() => toggleCollapse(3)} className="collapse-btn">
-              Sécurité
+            <button onClick={() => toggleCollapse(3)} className={props.classbtn4}>
+            {props.titre4}
               <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
-            <p className="collapse-texte">La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
+            <p className={props.classtext}>{props.texte4}</p>
           </div>
         ) : (
-          <button onClick={() => toggleCollapse(3)} className="collapse-btn">
-            Sécurité
+          <button onClick={() => toggleCollapse(3)} className={props.classbtn4}>
+            {props.titre4}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
           </button>
         )}

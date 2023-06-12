@@ -58,3 +58,42 @@
   color: #ffff;
 }
 
+.logement-collapse-container{
+  display:flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  gap: 13%;
+  margin-top: 1%;
+}
+
+.logement-btn{
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-red;
+  height:47px ;
+  font-size: $font-size-p;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 40px;
+  color:  $color-white;
+  border: $color-red;
+  width: 39VW;
+  
+}
+.logement-btn-none{
+  display: none;
+  width: 0px;
+  height: 0;
+}
+
+.logement-texte{
+  background-color: #f7f7f7;
+  color: $color-red;
+  font-size: $font-size-p;
+  border-radius: 5px;
+  margin-top: -1px;
+  width: 39VW;
+  padding: 20px 0 20px 0;
+}
+    

@@ -1,5 +1,6 @@
 import "../../styles/index.css"
 import Slideshow from "../../components/Slideshow"
+import Collapse from "../../components/Collapse";
 import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +9,15 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 function Logement(){
+  let classbtn1 ="logement-btn";
+    let classbtn2 ="logement-btn";
+    let classbtn3 ="logement-btn-none";
+    let classbtn4 ="logement-btn-none";
+    let containercollapse ="logement-collapse-container"
+    let titre1 = "Description";
+    let titre2 ="Équipements";
+    let classtext ="logement-texte"
+    
     const {data} = require('../../data/AppartementList');
     const params = useParams()
     const navigate = useNavigate()
@@ -58,8 +68,10 @@ function Logement(){
       className="logement-etoile logement-etoile-grise"
     />
   ))}
-</div>
+</div>   
 
+
+<Collapse classbtn1={classbtn1}  classbtn2={classbtn2} classbtn3={classbtn3}  classbtn4={classbtn4} containercollapse={containercollapse} titre1={titre1} titre2={titre2} classtext={classtext} texte1={logement.description} texte2={logement.equipments} />
 
 
         </div>

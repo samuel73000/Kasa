@@ -5,12 +5,14 @@
 
 
 // collapse a propos
+.collapse-container{
+  width: 90%;
+}
 
 .collapse-btn{
     display: flex;
     justify-content: space-between;
     background-color: $color-red;
-    width: 90%;
     height:47px ;
     margin-left: 100px;
     font-size: $font-size-p;
@@ -19,20 +21,20 @@
     margin-top: 40px;
     color:  $color-white;
     border: $color-red;
+    width: 100%;
+    
 }
-
 
 
 .collapse-texte{
     background-color: #f7f7f7;
     color: $color-red;
     margin-left: 98px;
-    width: 89%;
     font-size: $font-size-p;
     border-radius: 5px;
-    padding: 36px 0px 19px 19px;
     margin-top: -1px;
-    
+    width: 100%;
+    padding: 20px 0 20px 0;
 }
 
 
