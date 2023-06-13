@@ -260,13 +260,11 @@
   color: white;
 }
 
-.logement-collapse-container {
+.logement-container-collapse {
   display: flex;
   flex-direction: row;
-  width: 90%;
-  justify-content: space-between;
-  gap: 13%;
-  margin-top: 1%;
+  gap: 12%;
+  margin-top: 4%;
 }
 
 .logement-btn {
@@ -277,16 +275,9 @@
   font-size: 24px;
   align-items: center;
   border-radius: 5px;
-  margin-top: 40px;
   color: white;
   border: #ff6060;
   width: 39VW;
-}
-
-.logement-btn-none {
-  display: none;
-  width: 0px;
-  height: 0;
 }
 
 .logement-texte {

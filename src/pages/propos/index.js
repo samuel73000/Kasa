@@ -16,11 +16,15 @@ function Propos(){
     let classbtn3 ="collapse-btn";
     let classbtn4 ="collapse-btn";
     let classtext ="collapse-texte";
-    let containercollapse ="collapse-container"
+    
     return(
         <div>
         <Banner image={imageHeader} />
-        <Collapse titre1={titre1} texte1={texte1}  titre2={titre2} texte2={texte2} titre3={titre3} texte3={texte3} titre4={titre4} texte4={texte4} classbtn1={classbtn1}  classbtn2={classbtn2}   classbtn3={classbtn3}  classbtn4={classbtn4} containercollapse={containercollapse} classtext={classtext} />
+        <Collapse titre1={titre1} texte1={texte1}  classbtn1={classbtn1}  classtext={classtext} />
+        <Collapse titre1={titre2} texte1={texte2}  classbtn1={classbtn2}  classtext={classtext} />
+        <Collapse titre1={titre3} texte1={texte3}  classbtn1={classbtn3}  classtext={classtext} />
+        <Collapse titre1={titre4} texte1={texte4}  classbtn1={classbtn4}  classtext={classtext} />
+
         </div>
     )
     

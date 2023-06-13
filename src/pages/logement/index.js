@@ -10,13 +10,9 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Logement(){
   let classbtn1 ="logement-btn";
-    let classbtn2 ="logement-btn";
-    let classbtn3 ="logement-btn-none";
-    let classbtn4 ="logement-btn-none";
-    let containercollapse ="logement-collapse-container"
     let titre1 = "Description";
     let titre2 ="Équipements";
-    let classtext ="logement-texte"
+    let classtext ="logement-texte";
     
     const {data} = require('../../data/AppartementList');
     const params = useParams()
@@ -68,12 +64,19 @@ function Logement(){
       className="logement-etoile logement-etoile-grise"
     />
   ))}
-</div>   
+</div>  
 
 
-<Collapse classbtn1={classbtn1}  classbtn2={classbtn2} classbtn3={classbtn3}  classbtn4={classbtn4} containercollapse={containercollapse} titre1={titre1} titre2={titre2} classtext={classtext} texte1={logement.description} texte2={logement.equipments} />
 
-
+<div className="logement-container-collapse">
+  <Collapse classbtn1={classbtn1} titre1={titre1} classtext={classtext} texte1={logement.description} />
+  <Collapse classbtn1={classbtn1} titre1={titre2} classtext={classtext} texte1={
+  <ul>
+    {logement.equipments.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+    </ul>} />  
+</div>
         </div>
       )}
     </>

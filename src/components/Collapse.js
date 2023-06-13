@@ -23,7 +23,7 @@ function Collapse(props) {
   
 
   return (
-    <section className={props.containercollapse}>
+    <section className="collapse-container">
     <div>
         {isOpen[0] ? (
           <div>
@@ -40,59 +40,6 @@ function Collapse(props) {
           </button>
         )}
       </div>
-
-      <div>
-        {isOpen[1] ? (
-          <div>
-            <button onClick={() => toggleCollapse(1)} className={props.classbtn2}>
-            {props.titre2}
-              <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
-            </button>
-            <p className={props.classtext}>{props.texte2}</p>
-          </div>
-        ) : (
-          <button onClick={() => toggleCollapse(1)} className={props.classbtn2}>
-            {props.titre2}
-            <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
-          </button>
-        )}
-      </div>
-
-      <div>
-        {isOpen[2] ? (
-          <div>
-            <button onClick={() => toggleCollapse(2)} className={props.classbtn3}>
-            {props.titre3}
-              <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
-            </button>
-            <p className={props.classtext}>{props.texte3}</p>
-          </div>
-        ) : (
-          <button onClick={() => toggleCollapse(2)} className={props.classbtn3}>
-            {props.titre3}
-            <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
-          </button>
-        )}
-      </div>
-
-      <div>
-        {isOpen[3] ? (
-          <div>
-            <button onClick={() => toggleCollapse(3)} className={props.classbtn4}>
-            {props.titre4}
-              <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
-            </button>
-            <p className={props.classtext}>{props.texte4}</p>
-          </div>
-        ) : (
-          <button onClick={() => toggleCollapse(3)} className={props.classbtn4}>
-            {props.titre4}
-            <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
-          </button>
-        )}
-      </div>
-
-
 
     </section>
   );
