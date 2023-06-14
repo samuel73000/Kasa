@@ -1,5 +1,6 @@
 @import "../utils/variable";
 @import "../utils/mixin";
+@import"../utils/animation";
 
 .logement-titre {
   color: $color-red;
@@ -80,6 +81,13 @@
   color:  $color-white;
   border: $color-red;
   width: 39VW;
+  .collapse-fleche-open{
+    animation: flecheAnimation 0.5s reverse forwards;
+    }
+ 
+    .collapse-fleche-close{
+      animation: flecheAnimation 0.5s  forwards;
+        }
 }
 
 
@@ -90,7 +98,30 @@
   font-size: $font-size-p;
   border-radius: 5px;
   margin-top: -1px;
-  width: 39VW;
-  padding: 20px 0 20px 0;
+  width: 37VW;
+  padding: 20px 20px 20px 20px;
+  animation: apparition 0.3s ease-in-out;
 }
+
+.logement-texte2{
+  background-color: #f7f7f7;
+  color: $color-red;
+  font-size: $font-size-p;
+  border-radius: 5px;
+  margin-top: -1px;
+  width: 39VW;
+  padding-top: 10px;
+  animation: apparition 0.3s ease-in-out;
+}
+
+
     
+ul{
+  list-style-type: none;
+}
+li{
+margin-left: -20px;
+padding-bottom: 15px;
+}
+
+

@@ -1,5 +1,7 @@
+
 @import "../utils/variable";
 @import "../utils/mixin";
+@import "../utils/animation";
 
 
 
@@ -22,6 +24,13 @@
     color:  $color-white;
     border: $color-red;
     width: 100%;
+    .collapse-fleche-open{
+      animation: flecheAnimation 0.5s reverse forwards;
+      }
+   
+      .collapse-fleche-close{
+        animation: flecheAnimation 0.5s  forwards;
+          }
     
 }
 
@@ -35,49 +44,12 @@
     margin-top: -1px;
     width: 100%;
     padding: 20px 0 20px 0;
+    animation: apparition 0.3s ease-in-out;
+    
 }
-
-
- .collapse-btn{
-  .collapse-fleche-open{
-    animation: flecheAnimation 0.5s reverse forwards;
-    }
- 
-
-}
-
-.collapse-btn{
-   .collapse-fleche-close{
-    animation: flecheAnimation 0.5s  forwards;
-     
-      }
-  
-
-}
-
 
 
 #collapse-fleche{
   
   margin-right: 20px;
 }
-
-
-
-
-
-@keyframes flecheAnimation {
-  from {
-    
-    transform: rotate(0deg)  ;
-  }
-  to{
-    transform: rotate(180deg) ;
-  }
-}
-
-
-
-
-
-

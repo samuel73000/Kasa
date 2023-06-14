@@ -14,7 +14,7 @@ color: $color-red;
 position: relative;
 top: 17px;
 font-size: $font-size-p;
-
+text-decoration: none;
 }
 
 .header-propos{
@@ -23,19 +23,13 @@ font-size: $font-size-p;
     position: relative;
     top: 17px;
     font-size: $font-size-p;
-}
-
-.header-selected{
-    color: $color-red;
-    margin-left: 57px;
-    position: relative;
-    top: 17px;
-    font-size: $font-size-p;
     text-decoration: none;
 }
+
+
 
 .active{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
  }

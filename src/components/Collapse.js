@@ -29,7 +29,7 @@ function Collapse(props) {
           <div>
             <button onClick={() => {toggleCollapse(0);}} className={props.classbtn1}>
             {props.titre1}
-              <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
+            <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
             <p className={props.classtext}>{props.texte1}</p>
           </div>

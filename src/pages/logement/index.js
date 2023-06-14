@@ -13,6 +13,7 @@ function Logement(){
     let titre1 = "Description";
     let titre2 ="Équipements";
     let classtext ="logement-texte";
+    let classtext2 ="logement-texte2";
     
     const {data} = require('../../data/AppartementList');
     const params = useParams()
@@ -70,7 +71,7 @@ function Logement(){
 
 <div className="logement-container-collapse">
   <Collapse classbtn1={classbtn1} titre1={titre1} classtext={classtext} texte1={logement.description} />
-  <Collapse classbtn1={classbtn1} titre1={titre2} classtext={classtext} texte1={
+  <Collapse classbtn1={classbtn1} titre1={titre2} classtext={classtext2} texte1={
   <ul>
     {logement.equipments.map((item, index) => (
           <li key={index}>{item}</li>

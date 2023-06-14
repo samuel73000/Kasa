@@ -7,7 +7,7 @@ function Header(){
         <img src={require("../assets/LOGO.png")} alt='logo Kasa' className='header-img' />
         <nav>
             <NavLink to="/"  className={"header-accueil "} >Accueil</NavLink>
-            <NavLink to="/Propos"className={"header-propos"} >A Propos</NavLink>
+            <NavLink to="/Propos"className={"header-propos "} >A Propos</NavLink>
         </nav>
         </div>
     )
