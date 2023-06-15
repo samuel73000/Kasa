@@ -10,6 +10,7 @@
 .error-titre{
     font-size: 263px;
     color: $color-red;
+    
 }
 
 .error-texte{
@@ -23,4 +24,25 @@
     margin-top: 200px;
 }
 
+}
+
+@media (max-width: 1440px){
+    .error-container{
+    
+    .error-titre{
+        font-size: 96px;
+    }
+    
+    .error-texte{
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .error-link{
+       
+        font-size: 14px;
+        margin-top: 100px;
+    }
+    
+    }
+    
 }

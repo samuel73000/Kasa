@@ -28,3 +28,31 @@
     font-size: $font-size-p;
     }
 }
+
+@media (max-width: 1440px){
+    .footer-container{
+        
+        bottom: -50px;
+       
+       
+        width: 135.5%;
+        height:200px ;
+        margin-left: -100PX;
+       
+        
+        
+        .footer-img{
+        margin-left: 47%;
+        margin-top: 66px;
+        margin-bottom: 15px;
+        }
+        
+        .footer-text{
+        margin-left: 41%;
+        font-size: 12px;
+        }
+    }
+
+
+
+}
