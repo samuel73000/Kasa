@@ -27,3 +27,22 @@
     top: -250px;
   }
 }
+
+@media (max-width: 1440px){
+  .slideshow-container {
+    .slideshow-img {
+      height: 255px;
+    }
+  
+    .slideshow-fleche-gauche {
+      font-size: 30px;
+      bottom: -150px;
+    }
+  
+    .slideshow-fleche-droite {
+      margin-left: 91%;
+      font-size: 30px;
+      top: -150px;
+    }
+  }
+}

@@ -125,3 +125,100 @@ padding-bottom: 15px;
 }
 
 
+@media (max-width: 1440px){
+  .logement-titre {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+  
+  .logement-location {
+    font-size: 14px;
+  }
+  
+  .logement-container-profil {
+    position: relative;
+    margin-left: 70%;
+    margin-top: 0px;
+    display: flex;
+    gap: 0px;
+    top: 30px;
+  }
+  .logement-name {
+    color: $color-red;
+    font-size: 12px;
+  }
+  .logement-host-picture {
+    position: relative;
+    bottom: -10px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logement-container-tags {
+    position: relative;
+    top: -85px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .logement-tags {
+    font-size: 10px;
+    padding: 5px 15px 5px 15px;
+  }
+  
+  .logement-container-etoile{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    justify-content: start;
+   top: -20px;
+  }
+  
+  .logement-etoile-rouge{
+    font-size: 10px;
+  }
+  .logement-etoile-grise{
+    font-size: 10px;
+  }
+  
+  
+  
+  
+  .logement-container-collapse{
+    flex-direction: column;
+    gap: 0%;
+    top: 50px;
+  }
+  
+  
+  .logement-btn{
+    height:30px ;
+    font-size: 13px;
+    width: 89VW;
+    margin-bottom: 20px;
+    .collapse-fleche-open{
+      animation: flecheAnimation 0.5s reverse forwards;
+      }
+   
+      .collapse-fleche-close{
+        animation: flecheAnimation 0.5s  forwards;
+          }
+  }
+  
+  
+  
+  .logement-texte{
+    font-size: 13px;
+    border-radius: 5px;
+    width: 78.5VW;
+    margin-top: -20px;
+    
+  }
+  
+  .logement-texte2{
+    font-size: 13px;
+    margin-top: -20px;
+    width: 89VW;
+  }
+  
+}
