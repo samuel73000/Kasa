@@ -7,15 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
-
 function Logement(){
-  let classbtn1 ="logement-btn";
-    let titre1 = "Description";
-    let titre2 ="Équipements";
-    let classtext ="logement-texte";
-    let classtext2 ="logement-texte2";
-    
+   
     const {data} = require('../../data/AppartementList');
+
     const params = useParams()
     const navigate = useNavigate()
     const id = params.id
@@ -70,8 +65,8 @@ function Logement(){
 
 
 <div className="logement-container-collapse">
-  <Collapse classbtn1={classbtn1} titre1={titre1} classtext={classtext} texte1={logement.description} />
-  <Collapse classbtn1={classbtn1} titre1={titre2} classtext={classtext2} texte1={
+  <Collapse classbtn1={"logement-btn"} titre1={"Description"} classtext={"logement-texte"} texte1={logement.description} />
+  <Collapse classbtn1={"logement-btn"} titre1={"Équipements"} classtext={"logement-texte2"} texte1={
   <ul>
     {logement.equipments.map((item, index) => (
           <li key={index}>{item}</li>
@@ -79,10 +74,13 @@ function Logement(){
     </ul>} />  
 </div>
         </div>
+        
       )}
     </>
+    
 </div>
     )
+    
 }
 
 export default Logement

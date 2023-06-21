@@ -29,7 +29,36 @@
     }
 }
 
+
 @media (max-width: 1440px){
+    .footer-container{
+        
+        bottom: -50px;
+       
+       
+        width: 118.7%;
+        height:200px ;
+        margin-left: -100PX;
+       
+        
+        
+        .footer-img{
+        margin-left: 47%;
+        margin-top: 66px;
+        margin-bottom: 15px;
+        }
+        
+        .footer-text{
+        margin-left: 43%;
+        font-size: 12px;
+        }
+    }
+    
+}
+
+
+
+@media (max-width: 768px){
     .footer-container{
         
         bottom: -50px;

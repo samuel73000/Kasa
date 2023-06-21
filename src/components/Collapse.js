@@ -10,7 +10,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 
 function Collapse(props) {
-  const [isOpen, setIsOpen] = useState([]);
+  const [isOpen, setIsOpen] = useState([false]);
 
   const toggleCollapse = (index) => {
     const newIsOpen = [...isOpen];
@@ -25,16 +25,16 @@ function Collapse(props) {
   return (
     <section className="collapse-container">
     <div>
-        {isOpen[0] ? (
+        {isOpen[false] ? (
           <div>
-            <button onClick={() => {toggleCollapse(0);}} className={props.classbtn1}>
+            <button onClick={() => {toggleCollapse(true);}} className={props.classbtn1}>
             {props.titre1}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-open" />
             </button>
             <p className={props.classtext}>{props.texte1}</p>
           </div>
         ) : (
-          <button onClick={() => { toggleCollapse(0)}} className={props.classbtn1} >
+          <button onClick={() => { toggleCollapse(false)}} className={props.classbtn1} >
             {props.titre1}
             <FontAwesomeIcon icon={faChevronDown} id="collapse-fleche" className="collapse-fleche-close" />
           </button>

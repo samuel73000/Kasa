@@ -18,7 +18,7 @@
   margin-top: 200px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 768px) {
   .error-container .error-titre {
     font-size: 96px;
   }
@@ -42,13 +42,13 @@
 }
 
 .banner-container-home {
-  width: 90%;
+  width: 100%;
   height: 223px;
   margin-top: 68px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 90px;
+  margin-left: 0px;
 }
 
 .banner-img-home {
@@ -57,7 +57,7 @@
   height: 223px;
   border-radius: 25px;
   z-index: 1;
-  filter: brightness(60%);
+  filter: brightness(40%);
 }
 
 .banner-img-propos {
@@ -78,18 +78,19 @@
 
 @media (max-width: 1440px) {
   .banner-container-propos {
-    width: 90%;
+    width: 100%;
     height: 223px;
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .banner-container-home {
+    width: 100%;
     height: 111px;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .banner-img-home {
     height: 111px;
@@ -101,38 +102,55 @@
     font-size: 24px;
   }
 }
+@media (max-width: 768px) {
+  .banner-container-propos {
+    width: 100%;
+    height: 223px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .banner-img-propos {
+    height: 223px;
+  }
+}
 .Card-container {
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  background-color: #e5e5e5;
+  background-color: #f7f7f7;
   border-radius: 25px;
+  padding: 0px 50px 0px 50px;
   margin-top: 43px;
-  padding: 50px 50px 0px 50px;
-  width: 94%;
-  height: 2500px;
+  width: 94.5%;
+  height: 2700px;
   align-items: center;
-  column-gap: 30px;
 }
 .Card-container .card-img {
   border-radius: 10px;
   width: 100%;
-  height: 100%;
+  height: 340px;
   padding: 0;
+  filter: brightness(80%);
 }
 .Card-container .card-text {
+  position: relative;
   line-height: 142.6%;
   font-size: 18px;
   color: white;
-  width: 20%;
+  width: 80%;
   height: 0px;
-  margin-top: -5%;
-  margin-left: -4%;
-  margin-bottom: 8%;
+  top: -30%;
+  left: 5%;
 }
 .Card-container a {
-  width: 25%;
-  height: 12%;
+  width: 31.8%;
+  height: 11%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 @media (max-width: 1440px) {
@@ -140,21 +158,41 @@
     flex-wrap: nowrap;
     margin-top: 20px;
     padding: 0 0 60px 0;
-    width: 100%;
     height: auto;
-    row-gap: 40px;
+    width: 100%;
   }
   .Card-container .card-img {
-    margin-top: 20px;
-    width: 75vw;
     height: 255px;
-    margin-left: -100px;
   }
   .Card-container .card-text {
-    width: 75%;
-    margin-top: -30%;
-    margin-left: -5%;
-    margin-bottom: 8%;
+    top: -90px;
+  }
+  .Card-container a {
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: -50px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .Card-container {
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding: 0 0 60px 0;
+    height: auto;
+    width: 100%;
+  }
+  .Card-container .card-img {
+    height: 255px;
+  }
+  .Card-container .card-text {
+    top: -90px;
+  }
+  .Card-container a {
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: -50px;
+    margin-top: 40px;
   }
 }
 @keyframes flecheAnimation {
@@ -218,6 +256,20 @@
 
 @media (max-width: 1440px) {
   .collapse-btn {
+    margin-top: 30px;
+    height: 30px;
+    font-size: 15px;
+    margin-left: 0px;
+    width: 89vw;
+  }
+  .collapse-texte {
+    font-size: 15px;
+    margin-left: 0px;
+    width: 89vw;
+  }
+}
+@media (max-width: 768px) {
+  .collapse-btn {
     margin-top: 20px;
     height: 30px;
     font-size: 13px;
@@ -252,6 +304,23 @@
 }
 
 @media (max-width: 1440px) {
+  .footer-container {
+    bottom: -50px;
+    width: 118.7%;
+    height: 200px;
+    margin-left: -100PX;
+  }
+  .footer-container .footer-img {
+    margin-left: 47%;
+    margin-top: 66px;
+    margin-bottom: 15px;
+  }
+  .footer-container .footer-text {
+    margin-left: 43%;
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
   .footer-container {
     bottom: -50px;
     width: 135.5%;
@@ -298,15 +367,23 @@
   }
   .haeder-container .header-accueil {
     top: 22px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .haeder-container .header-propos {
     margin-left: 20px;
     top: 22px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .haeder-container .header-img {
     width: 145px;
+  }
+}
+@media (max-width: 768px) {
+  .haeder-container .header-accueil {
+    font-size: 12px;
+  }
+  .haeder-container .header-propos {
+    font-size: 12px;
   }
 }
 .slideshow-container .slideshow-img {
@@ -315,22 +392,69 @@
   height: 415px;
 }
 .slideshow-container .slideshow-fleche-gauche {
+  color: white;
   position: relative;
   background-color: transparent;
   border: transparent;
+  bottom: -260px;
   font-size: 80px;
-  bottom: -250px;
 }
 .slideshow-container .slideshow-fleche-droite {
+  color: white;
   position: relative;
   background-color: transparent;
   border: transparent;
   margin-left: 96.5%;
+  top: -260px;
   font-size: 80px;
+}
+.slideshow-container .slideshow-fleche-gauche-1Imange {
+  color: white;
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+  bottom: -250px;
+  font-size: 80px;
+  visibility: hidden;
+}
+.slideshow-container .slideshow-fleche-droite-1Imange {
+  color: white;
+  position: relative;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 96.5%;
   top: -250px;
+  font-size: 80px;
+  visibility: hidden;
+}
+.slideshow-container .slideshow-slide-number {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+  font-size: 20px;
+  color: white;
 }
 
 @media (max-width: 1440px) {
+  .slideshow-container .slideshow-img {
+    height: 300px;
+  }
+  .slideshow-container .slideshow-fleche-gauche {
+    font-size: 30px;
+    bottom: -180px;
+  }
+  .slideshow-container .slideshow-fleche-droite {
+    margin-left: 95%;
+    font-size: 30px;
+    top: -166px;
+  }
+  .slideshow-container .slideshow-slide-number {
+    top: -80px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
   .slideshow-container .slideshow-img {
     height: 255px;
   }
@@ -341,7 +465,11 @@
   .slideshow-container .slideshow-fleche-droite {
     margin-left: 91%;
     font-size: 30px;
-    top: -150px;
+    top: -140px;
+  }
+  .slideshow-container .slideshow-slide-number {
+    top: -80px;
+    font-size: 15px;
   }
 }
 @keyframes flecheAnimation {
@@ -481,11 +609,94 @@ li {
 
 @media (max-width: 1440px) {
   .logement-titre {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+  .logement-location {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .logement-container-profil {
+    position: relative;
+    margin-left: 90%;
+    margin-top: 0px;
+    display: flex;
+    gap: 0px;
+    top: -90px;
+    left: -25px;
+  }
+  .logement-name {
+    color: #ff6060;
+    font-size: 12px;
+  }
+  .logement-host-picture {
+    position: relative;
+    bottom: -10px;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+  }
+  .logement-container-tags {
+    position: relative;
+    top: -85px;
+    display: flex;
+    gap: 10px;
+  }
+  .logement-tags {
+    font-size: 10px;
+    padding: 5px 15px 5px 15px;
+  }
+  .logement-container-etoile {
+    position: relative;
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    top: -90px;
+  }
+  .logement-etoile-rouge {
+    font-size: 10px;
+  }
+  .logement-etoile-grise {
+    font-size: 10px;
+  }
+  .logement-container-collapse {
+    position: relative;
+    flex-direction: column;
+    gap: 0%;
+    top: -50px;
+  }
+  .logement-btn {
+    height: 30px;
+    font-size: 13px;
+    width: 89VW;
+    margin-bottom: 20px;
+  }
+  .logement-btn .collapse-fleche-open {
+    animation: flecheAnimation 0.5s reverse forwards;
+  }
+  .logement-btn .collapse-fleche-close {
+    animation: flecheAnimation 0.5s forwards;
+  }
+  .logement-texte {
+    font-size: 13px;
+    border-radius: 5px;
+    width: 84VW;
+    margin-top: -20px;
+  }
+  .logement-texte2 {
+    font-size: 13px;
+    margin-top: -20px;
+    width: 89VW;
+  }
+}
+@media (max-width: 768px) {
+  .logement-titre {
     font-size: 18px;
     margin-top: -20px;
   }
   .logement-location {
     font-size: 14px;
+    margin-bottom: 10px;
   }
   .logement-container-profil {
     position: relative;
@@ -494,6 +705,7 @@ li {
     display: flex;
     gap: 0px;
     top: 30px;
+    left: 0px;
   }
   .logement-name {
     color: #ff6060;
@@ -531,7 +743,7 @@ li {
   .logement-container-collapse {
     flex-direction: column;
     gap: 0%;
-    top: 50px;
+    top: 20px;
   }
   .logement-btn {
     height: 30px;
@@ -574,6 +786,11 @@ img {
 }
 
 @media (max-width: 1440px) {
+  body {
+    margin: 0 40px 0 40px;
+  }
+}
+@media (max-width: 768px) {
   body {
     margin: 0 20px 0 20px;
   }

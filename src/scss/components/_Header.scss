@@ -34,24 +34,42 @@ text-decoration: none;
 
  }
 
- @media (max-width: 1440px) { 
+
+ @media (  max-width: 1440px){
+
     .haeder-container{
         margin-top: 20px;
     .header-accueil{
-    top: 22px;
-    font-size: 12px;
+        top: 22px;
+    font-size: 14px;
     }
     
     .header-propos{
         margin-left: 20px;
         top: 22px;
-        font-size: 12px;
+        font-size: 14px;
       
        
     }
 .header-img{
     width: 145px;
-}
+}}
+
+ }
+
+
+ @media (max-width: 768px) { 
+    .haeder-container{
+    .header-accueil{
+    font-size: 12px;
+    }
+    
+    .header-propos{
+        font-size: 12px;
+      
+       
+    }
+
     
      }
 

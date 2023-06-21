@@ -8,72 +8,109 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    background-color: #e5e5e5;
+    background-color: #f7f7f7;
     border-radius: 25px;
+    padding: 0px 50px 0px 50px;
     margin-top: 43px;
-    padding: 50px 50px 0px 50px;
-    width: 94%;
-    height: 2500px;
+    width: 94.5%;
+    height: 2700px;
     align-items: center;
-   column-gap: 30px;
-    
+
 
 
 .card-img{
   
     border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: 340px;
     padding: 0;
-    
-    
+    filter: brightness(80%);
+
+
 }
 
 .card-text{
+  position: relative;
   line-height: 142.6%;
   font-size: 18px;
   color: $color-white;
-  width: 20%;
+  width: 80%;
   height: 0px;
-  margin-top: -5%;
-  margin-left: -4%;
-  margin-bottom: 8%;
- 
+  top: -30%;
+  left: 5%;
 }
 a{
-  width: 25%;
-  height: 12%;
-  
+  width: 31.8%;
+  height: 11%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+ margin-top: 40px;
 }
 
+
 }
+
+// responsive tablettes
 @media (max-width: 1440px){
   .Card-container{
     flex-wrap: nowrap;
     margin-top: 20px;
     padding: 0 0 60px 0 ;
-    width:100%;
     height: auto;
-   row-gap: 40px;
-    
+    width:100%;
+
+   
+
 
 
 .card-img{
-  margin-top: 20px;
-    width: 75vw;
-    height: 255px;
-    margin-left: -100px;
-
-    
-    
+      height: 255px;  
 }
 
 .card-text{
-  width: 75%;
-  margin-top: -30%;
-  margin-left: -5%;
-  margin-bottom: 8%;
+  top: -90px;
 }
-  }
+a{
+  width: 90%;
+  margin-right: 0px;
+  margin-bottom: -50px;
+ margin-top: 40px;
+}
+
+
+}
+
+
+
+}
+// responsive telephone
+@media (max-width: 768px){
+  .Card-container{
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    padding: 0 0 60px 0 ;
+    height: auto;
+    width:100%;
+
+   
+
+
+
+.card-img{
+      height: 255px;  
+}
+
+.card-text{
+  top: -90px;
+}
+a{
+  width: 90%;
+  margin-right: 0px;
+  margin-bottom: -50px;
+ margin-top: 40px;
+}
+
+
+}
 
 }

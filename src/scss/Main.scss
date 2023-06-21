@@ -13,8 +13,7 @@
 body{
     margin: 0 100px 0 100px;
     font-family: 'Montserrat', sans-serif;
-    
-    
+
 
 }
 .App{
@@ -27,11 +26,16 @@ body{
 img{
     box-sizing: border-box;
     object-fit: cover;
+    
   }
 
-
-
   @media (max-width: 1440px){
+    body{
+        margin: 0 40px 0 40px;
+    }
+  }
+
+  @media (max-width: 768px){
     body{
         margin: 0 20px 0 20px;
     }
