@@ -115,6 +115,9 @@
   .banner-img-propos {
     height: 223px;
   }
+  .banner-titre {
+    margin-left: 6%;
+  }
 }
 .Card-container {
   flex-wrap: wrap;
@@ -151,6 +154,7 @@
   margin-right: 40px;
   margin-bottom: 40px;
   margin-top: 40px;
+  text-decoration: none;
 }
 
 @media (max-width: 1440px) {
@@ -287,53 +291,54 @@
   bottom: -50px;
   margin-top: auto;
   background-color: #000000;
-  width: 111.7%;
+  width: 100%;
   height: 200px;
-  margin-left: -100PX;
+  margin-left: -100px;
+  padding-right: 200px;
+}
+.footer-container .footer-center {
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
 }
 .footer-container .footer-img {
+  position: absolute;
   width: 120px;
-  margin-left: 47%;
   margin-top: 66px;
   margin-bottom: 15px;
 }
 .footer-container .footer-text {
+  position: absolute;
   color: white;
-  margin-left: 41%;
+  top: 55%;
   font-size: 24px;
 }
 
 @media (max-width: 1440px) {
   .footer-container {
     bottom: -50px;
-    width: 118.7%;
+    padding-right: 90px;
     height: 200px;
-    margin-left: -100PX;
+    margin-left: -50px;
   }
-  .footer-container .footer-img {
-    margin-left: 47%;
-    margin-top: 66px;
-    margin-bottom: 15px;
+  .footer-container .footer-center {
+    margin-left: 15%;
   }
   .footer-container .footer-text {
-    margin-left: 43%;
     font-size: 12px;
   }
 }
 @media (max-width: 768px) {
   .footer-container {
     bottom: -50px;
-    width: 133%;
+    padding-right: 70px;
     height: 200px;
-    margin-left: -100PX;
+    margin-left: -50px;
   }
-  .footer-container .footer-img {
-    margin-left: 47%;
-    margin-top: 66px;
-    margin-bottom: 15px;
+  .footer-container .footer-center {
+    margin-left: 30%;
   }
   .footer-container .footer-text {
-    margin-left: 41%;
     font-size: 12px;
   }
 }
