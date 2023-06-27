@@ -10,7 +10,6 @@ function Home() {
     <div>
       <Banner image={imageHeader} classNameTitre={bannerTitre} container={containerBanner} imageClass={imageClassBanner} />
       <Card />
-
     </div>
   );
 }
