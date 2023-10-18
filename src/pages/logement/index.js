@@ -22,7 +22,7 @@ function Logement(){
         }else{
             setLogement({...current})
         }
-    }, [id] )
+    }, [id , data , navigate] )
 
    
     return(
