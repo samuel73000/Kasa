@@ -9,7 +9,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 function Logement(){
    
-    const {data} = require('../../data/AppartementList');
+  const {data} = require('../../data/AppartementList');
 
     const params = useParams()
     const navigate = useNavigate()
@@ -37,7 +37,7 @@ function Logement(){
           <p className="logement-location">{logement.location}</p>
           <div className="logement-container-profil">
           <p className="logement-name">{logement.host.name}</p>
-          <img src={logement.host.picture} className="logement-host-picture" />
+          <img src={logement.host.picture} className="logement-host-picture" alt="logement" />
           </div>
           <div className="logement-container-tags">
           {logement.tags.map((tag, index) =>(
